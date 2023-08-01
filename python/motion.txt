@@ -1,0 +1,1 @@
+/home/gait/BidirectionalGaitNet_Data/GridSampling/2nd_rollout/gaitdata

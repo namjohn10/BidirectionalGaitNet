@@ -1,0 +1,82 @@
+<!-- Helen hayes marker set -->
+<!-- In this file, offset is relative scale (not meter) -->
+<!-- <Markers>
+    <marker name="THEA" bn="Head" offset="0.0 1.0 0.0"/>
+    <marker name="FHEA" bn="Head" offset="0.0 0.0 1.0"/>
+    <marker name="RHEA" bn="Head" offset="0.0 0.0 -1.0"/>
+    
+    <marker name="LSHO" bn="ShoulderL" offset="1.0 1.0 0.0"/>
+    <marker name="RSHO" bn="ShoulderR" offset="-1.0 -1.0 0.0"/>
+    
+    <marker name="ROFF" bn="Torso" offset="0.4 0.0 -1.25"/>
+
+    <marker name="RELB" bn="ArmR" offset="-1.0 0.0 -1.0"/>
+    <marker name="LELB" bn="ArmL" offset="1.0 0.0 1.0"/>
+
+    <marker name="RWRI" bn="ForeArmR" offset="-1.0 0.0 -1.0"/>
+    <marker name="LWRI" bn="ForeArmL" offset="1.0 0.0 1.0"/>
+
+    <marker name="RASI" bn="Pelvis" offset="-1.0 0.35 0.8"/>
+    <marker name="LASI" bn="Pelvis" offset="1.0 0.35 0.8"/>
+    <marker name="VSAC" bn="Pelvis" offset="0.0 0.4 -1.5"/>
+    
+    <marker name="LTHI" bn="FemurL" offset="0.0 -0.25 1.2"/>
+    <marker name="RTHI" bn="FemurR" offset="0.0 0.5 -1.2"/>
+    
+    <marker name="LKNE" bn="FemurL" offset="1.0 -1.0 -0.7"/>
+    <marker name="RKNE" bn="FemurR" offset="-1.0 1.0 0.7"/>
+
+    <marker name="LSHA" bn="TibiaL" offset="-0.5 0.15 0.0"/>
+    <marker name="RSHA" bn="TibiaR" offset="0.5 0.0 0.0"/>
+
+    <marker name="LANK" bn="TibiaL" offset="1.0 -1.0 0.0"/>
+    <marker name="RANK" bn="TibiaR" offset="-1.0 1.0 0.0"/>
+
+    <marker name="LHEE" bn="TalusL" offset="-0.25 0.5 -1.0"/>
+    <marker name="RHEE" bn="TalusR" offset="0.25 -0.5 1.0"/>
+
+    <marker name="L.TO" bn="TalusL" offset="0.05 0.5 1.0"/>
+    <marker name="R.TO" bn="TalusR" offset="-0.05 -0.5 -1.0"/>
+
+</Markers> -->
+
+<!-- Reference Motion Capture Marker Set -->
+<Markers>
+    <!-- 0 ~ 9 -->
+    <marker name="THEA" bn="Head" offset="-0.324964   1.75804 -0.208198" />
+    <marker name="FHEA" bn="Head" offset="-0.329633  0.685126   1.72147" />
+    <marker name="RHEA" bn="Head" offset="-0.164429  0.364117  -1.85711" />
+    <marker name="RSHO" bn="ShoulderR" offset="-1.05864 0.867314 0.264738" />
+    <marker name="ROFF" bn="Torso" offset=" 0.659869 -0.338333  -1.93055" />
+    <marker name="RELB" bn="ArmR" offset="-0.884512 0.0152158   -1.35544" />
+    <marker name="RWRI" bn="ForeArmR" offset="-0.653554  0.143456  -1.250908" />
+    <marker name="LSHO" bn="ShoulderL" offset="  1.13433 -0.715388  0.138619" />
+    <marker name="LELB" bn="ArmL" offset=" 0.854484 -0.467451  1.35738" />
+    <marker name="LWRI" bn="ForeArmL" offset=" 0.660277   -1.8479 1.345453" />
+    
+    <!-- 10 ~ 12 -->
+    <marker name="RASI" bn="Pelvis" offset="-0.973826 0.456934   1.13777" />
+    <marker name="LASI" bn="Pelvis" offset=" 1.03149 0.3967  1.08894" />
+    <marker name="VSAC" bn="Pelvis" offset="0.0339948  0.751127  -1.83249" />
+
+    <!-- 13 ~ 18 -->
+    <marker name="RTHI" bn="FemurR" offset="-0.201315  0.548297  -1.03787" />
+    <marker name="RKNE" bn="FemurR" offset=" -0.46816   1.03094 0.0245748" />
+    <marker name="RSHA" bn="TibiaR" offset="  0.643627 -0.0102708  -0.577522" />
+    <marker name="RANK" bn="TibiaR" offset="-0.923882   1.13217  0.151928" />
+    <marker name="RHEE" bn="TalusR" offset=" 0.451773 -0.103223   1.17977" />
+    <marker name="R.TO" bn="TalusR" offset="-0.354027  0.126658  -1.39396" />
+
+    <!-- 19 ~ 24 -->
+    <marker name="LTHI" bn="FemurL" offset="  0.35668 -0.187267   1.37362" />
+    <marker name="LKNE" bn="FemurL" offset="  0.642614   -1.03622 -0.0370504" />
+    <marker name="LSHA" bn="TibiaL" offset="-0.440104  0.207533  0.804185" />
+    <marker name="LANK" bn="TibiaL" offset="    1.0727   -1.12629 -0.0112727" />    
+    <marker name="LHEE" bn="TalusL" offset="-0.0725818  0.0970522   -1.06962" />
+    <marker name="L.TO" bn="TalusL" offset=" 0.353263 -0.149824   1.53917" />
+    
+    <!-- 25 ~ 26 -->
+    <marker name="R_Hip" bn="Pelvis" offset="-0.8 -0.6 0.0" />
+    <marker name="L_Hip" bn="Pelvis" offset="0.8 -0.6 0.0" />
+
+</Markers>

@@ -1,0 +1,106 @@
+<!-- ===== Character Setting =====  -->
+
+<!-- 
+    skeleton : XML file path for the character
+    defaultKp, defaultKv : default PD gains for the joints
+    damping : damping for the joints
+    actuactor : 'pd', 'torque', 'muscle', 'mass'  
+-->
+<skeleton defaultKp="200" defaultKv="40" actuactor="mass" damping="0.1">../data/skeleton_gaitnet_narrow_model.xml</skeleton>
+
+<!-- ground : XML file path for the floor -->
+<ground>../data/ground.xml</ground>
+
+<!-- Muscle : XML file path for the muscle -->
+<muscle>../data/muscle_gaitnet.xml</muscle>
+
+<!-- meshLbsWeight : Whether to perform LBS (Linear Blend Skinning) weighting based on the bone mesh or not -->
+<meshLbsWeight>false</meshLbsWeight>
+
+<!-- ===== Simulation and control Setting =====  -->
+
+<!-- Simulation Setting  -->
+<simHz>480</simHz>
+<controlHz>30</controlHz>
+
+<!-- Muscle control Hz with respect to simulation Hz. -->
+<inferencepersim>1</inferencepersim>
+
+<!-- Residual PD target or not-->
+<residual>true</residual>
+
+<!-- 
+    bvh : BVH file path
+    symmetry : making BVH symmetry 
+    heightCalibration : calibration of the motion's height based on height of the character in the first frame  
+-->
+<bvh symmetry="true" heightCalibration="true">../data/motion/walk.bvh</bvh>
+
+<!-- Making BVH Cyclic -->
+<cyclicbvh>true</cyclicbvh>
+
+<!-- Advanced Option -->
+<heightCalibration strict="true">true</heightCalibration>
+
+<!-- rot : "one_foot" or "mid_feet" (default : "one_foot") -->
+<musclePoseOptimization rot="one_foot">true</musclePoseOptimization>
+
+<enforceSymmetry>true</enforceSymmetry>
+<actionScale>0.04</actionScale>
+
+<!-- -1 means not using -->
+<timeWarping>0.001</timeWarping> 
+<stanceLearning>false</stanceLearning>
+<metabolicReward>true</metabolicReward>
+
+<!-- Advanced Option (Muscle) -->
+<useVelocityForce>false</useVelocityForce>
+<useJointState>true</useJointState>
+<learningStd>false</learningStd>
+<hardPhaseClipping>true</hardPhaseClipping>
+<softPhaseClipping>false</softPhaseClipping>
+<torqueClipping>false</torqueClipping>
+<includeJtPinSPD>false</includeJtPinSPD>
+<useNormalizedParamState>false</useNormalizedParamState>
+
+<!-- eoe : 'time', 'tuple' -->
+<eoeType>tuple</eoeType>
+
+<!-- reward : 'deepmimic', 'gaitnet', 'scadiver'-->
+<rewardType>gaitnet</rewardType>
+
+<!-- For GaitNet Reward  -->
+<HeadLinearAccWeight>4.0</HeadLinearAccWeight>
+<HeadRotWeight>4.0</HeadRotWeight>
+<StepWeight>2.0</StepWeight>
+<MetabolicWeight>8.0</MetabolicWeight>
+<AvgVelWeight>6.0</AvgVelWeight>
+
+<parameter>
+    <gait>
+        <stride min = "0.75" max = "1.25" default = "1.0" sampling="uniform"/> 
+        <cadence min = "0.75" max = "1.25" default = "1.0" sampling="uniform"/> 
+    </gait>
+    <skeleton> 
+        <!-- <{name} min="{min}" max="{max}" default="{default}" sampling="{sampling}" group = "{groupname}"/> -->
+    </skeleton>
+    <torsion>
+        <FemurL min="-0.55" max="0.55" default = "0.0" sampling="uniform"/>
+        <FemurR min="-0.55" max="0.55" default = "0.0" sampling="uniform"/>
+    </torsion>
+    <muscle_length> 
+        <!-- <{name} min="{min}" max="{max}" default="{default}" sampling="{sampling}" group = "{groupname}"/> -->
+    </muscle_length> 
+    <muscle_force>
+       <!-- <{name} min="{min}" max="{max}" default="{default}" sampling="{sampling}" group = "{groupname}"/> -->
+    </muscle_force>
+</parameter>
+
+<cascading>
+    <networks>
+        <!-- <nn{number}>{path}</nn{number}> -->
+    </networks>
+    <edges>
+        <!-- <edge{number} start="{number}" end="{number}" /> -->
+    </edges>
+</cascading>

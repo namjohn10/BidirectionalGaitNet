@@ -1,0 +1,84 @@
+build/
+build_debug/
+*.so
+*.a
+
+legacy_data/
+
+nn/
+.vscode
+python/CMakeFiles/
+python/core
+python/python
+python/render
+__pycache__
+python/cmake_install.cmake
+python/Makefile
+python/ray_results
+python/vae_result
+python/rollout*
+
+frames/
+output.mp4
+
+# CLion related
+.idea/
+cmake-build-*/
+
+# lsp-server related
+compile_commands.json
+.clangd/
+
+# Ray related
+ray_results/
+prev_ray_results/
+
+# C++ and Python packages
+pkgsrc/
+pkgenv/
+pyenv/
+vae_result_no_kld_pre_decoder/
+rollout/*
+
+# SLURM output
+slurm-*.out
+
+# Error Log 
+error_log.txt
+
+# Folder
+gvae/
+with_kld_and_sqrt/
+full/
+pvae_training*
+double_kl_loss/
+pvae_again/
+motions
+
+python/gvae_training*
+python/gvae_prior_training*
+python/Result
+
+motions*/
+
+tmp/
+distillation*
+experiment*
+gaitnet/
+error_*
+
+screenshots
+Clustering/
+
+
+uniform
+
+python/fgn_network/*
+
+data/c3d/*
+
+previous_rollout/*
+
+*.npz
+
+*.c3d
