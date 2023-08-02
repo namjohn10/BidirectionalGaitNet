@@ -58,8 +58,6 @@ python/gvae_training*
 python/gvae_prior_training*
 python/Result
 
-motions*/
-
 tmp/
 distillation*
 experiment*
@@ -78,6 +76,5 @@ data/c3d/*
 
 previous_rollout/*
 
-*.npz
 
 *.c3d
