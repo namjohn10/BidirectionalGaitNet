@@ -33,7 +33,7 @@ CONFIG["ppo"].update({
     "use_gae": True,
     "lambda": 0.99,
     "gamma": 0.99,
-    "kl_coeff": 0.00,
+    "kl_coeff": 0.01,
     "shuffle_sequences": True,
     "num_sgd_iter": 4,
     "lr": 1e-4,
